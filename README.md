@@ -1,6 +1,8 @@
-# feathers-query-filters
+# feathers-query-filters-aggregate
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/feathersjs/feathers-query-filters.svg)](https://greenkeeper.io/)
+
+NOTE: This fork provides limited support for aggregate functions (sum, max, min, group by).
 
 > Adds support for special query string params used for filtering data in [FeatherJS](https://github.com/feathersjs)
 
@@ -14,7 +16,7 @@
 
 ## Getting Started
 
-`feathers-query-filters` is used internally by the [database service adapters](http://docs.feathersjs.com/databases/readme.html) to support [pagination and sorting](http://docs.feathersjs.com/databases/pagination.html).
+`feathers-query-filters-aggregate` is used internally by the [database service adapters](http://docs.feathersjs.com/databases/readme.html) to support [pagination and sorting](http://docs.feathersjs.com/databases/pagination.html).
 
 ## License
 

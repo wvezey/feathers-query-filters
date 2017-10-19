@@ -1,9 +1,9 @@
 {
-  "name": "feathers-query-filters",
+  "name": "feathers-query-filters-aggregate",
   "description": "Adds support for special query string params used for filtering data",
-  "version": "2.1.2",
+  "version": "0.1.1",
   "license": "MIT",
-  "homepage": "https://github.com/feathersjs/feathers-query-filters",
+  "homepage": "https://github.com/wvezey/feathers-query-filters-aggregate#feathers-query-filters",
   "main": "lib/index",
   "keywords": [
     "feathers",
@@ -29,11 +29,7 @@
     "type": "git",
     "url": "git://github.com/feathersjs/feathers-query-filters.git"
   },
-  "author": {
-    "name": "Feathers contributors",
-    "email": "hello@feathersjs.com",
-    "url": "https://feathersjs.com"
-  },
+  "author": "Feathers contributors <hello@feathersjs.com> (https://feathersjs.com)",
   "contributors": [
     "Eric Kryski <e.kryski@gmail.com> (http://erickryski.com)",
     "David Luecke <daff@neyeon.de> (http://neyeon.com)",
@@ -66,7 +62,7 @@
     ]
   },
   "directories": {
-    "lib": "lib"
+    "test": "test"
   },
   "dependencies": {
     "feathers-commons": "^0.8.0"
