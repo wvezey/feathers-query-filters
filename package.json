@@ -1,6 +1,6 @@
 {
   "name": "feathers-query-filters-aggregate",
-  "description": "Adds support for special query string params used for filtering data",
+  "description": "Adds support for special query string params used for filtering data. Provides additional support for aggregate sql functions.",
   "version": "0.2.0",
   "license": "MIT",
   "homepage": "https://github.com/wvezey/feathers-query-filters-aggregate#feathers-query-filters",
@@ -17,7 +17,11 @@
     "sort",
     "limit",
     "skip",
-    "select"
+    "select",
+    "sum",
+    "max",
+    "min",
+    "group by"
   ],
   "licenses": [
     {
@@ -27,7 +31,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/feathersjs/feathers-query-filters.git"
+    "url": "git@github.com:wvezey/feathers-query-filters-aggregate.git"
   },
   "author": "Feathers contributors <hello@feathersjs.com> (https://feathersjs.com)",
   "contributors": [
@@ -36,7 +40,7 @@
     "Marshall Thompson <marshall@creativeideal.net> (https://github.com/marshallswain)"
   ],
   "bugs": {
-    "url": "https://github.com/feathersjs/feathers-query-filters/issues"
+    "url": "https://github.com/wvezey/feathers-query-filters-aggregate/issues"
   },
   "engines": {
     "node": ">= 4"
