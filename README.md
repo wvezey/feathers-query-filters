@@ -18,6 +18,18 @@ NOTE: This fork provides limited support for aggregate functions (sum, max, min,
 
 `feathers-query-filters-aggregate` is used internally by the [database service adapters](http://docs.feathersjs.com/databases/readme.html) to support [pagination and sorting](http://docs.feathersjs.com/databases/pagination.html).
 
+To install:
+- npm install feathers-query-fitlers-aggregate --save
+
+## To Use
+This fork provides limited support for the following aggregate functions:
+- $groupBy
+- $min
+- $max
+- $sum
+
+Use these functions in your query syntax as you would the default feathers query functions, like $select, $sort, $limit, etc.
+
 ## License
 
 [MIT](LICENSE)
