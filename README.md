@@ -2,7 +2,11 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/feathersjs/feathers-query-filters.svg)](https://greenkeeper.io/)
 
-NOTE: This fork provides limited support for aggregate functions (sum, max, min, group by).
+NOTE: This fork provides limited support for the following aggregate functions:
+- $groupBy
+- $min
+- $max
+- $sum
 
 > Adds support for special query string params used for filtering data in [FeatherJS](https://github.com/feathersjs)
 
@@ -22,13 +26,13 @@ To install:
 - npm install feathers-query-fitlers-aggregate --save
 
 ## To Use
-This fork provides limited support for the following aggregate functions:
-- $groupBy
-- $min
-- $max
-- $sum
+You will need to make a minor edit to the feathers-waterline node module as follows:
 
-Use these functions in your query syntax as you would the default feathers query functions, like $select, $sort, $limit, etc.
+1. Open /node_modules/feathers-waterline/lib/index.js in your code editor
+2. Find the line at the require block at the top of the file that requires feathers-query-filters. In the current version as of the writing of this documentation, it is line 18, and reads 'var _feathersQueryFilters = require('feathers-query-filters');'
+3. Replace 'feathers-query-filters' with 'feathers-query-filters-aggregate'
+
+Restart feathers to refresh the node module linking. You will now be able to add the $groupBy, $sum, $min and $max functions to your query syntax.
 
 ## License
 
